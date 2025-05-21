@@ -1,6 +1,6 @@
 # NASA “Astronomy Picture of the Day” in Angular 19
 
-Developed to dip my toe into the waters of Angular!
+Developed to dip my toe into the waters of Angular :)
 
 🌐 Live WebSite: https://white-dune-0a3a32e03.6.azurestaticapps.net
 
