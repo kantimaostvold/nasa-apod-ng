@@ -1,0 +1,58 @@
+<!-- app.component.html -->
+<div class="wrapper">
+  <div class="container">
+
+    <!-- Header ----->
+    <div class="header">
+      <img src="nasa_logo.png" alt="NASA logo" />
+      <h1 id="logo_name">Astronomy Picture of the Day</h1>
+    </div>
+
+    <!-- LOADING  -->
+    <ng-container *ngIf="vm$ | async as apod; else loading">
+      <!-- SUCCESS  -->
+      <ng-container *ngIf="apod; else error">
+        <div class="info_section">
+
+          <!-- text -->
+          <div id="text_section">
+            <p>{{ apod.date }}</p>
+            <h1>{{ apod.title }}</h1>
+            <p id="expl">{{ apod.explanation }}</p>
+          </div>
+
+          <!-- picture or vids ---->
+          <div id="picture_section">
+            <img
+              *ngIf="apod.media_type === 'image'"
+              [src]="apod.url"
+              alt="NASA APOD"
+              width="500"
+            />
+
+            <iframe
+              *ngIf="apod.media_type === 'video'"
+              [src]="apod.url"
+              class="aspect-video w-full"
+            ></iframe>
+          </div>
+
+        </div>
+      </ng-container>
+    </ng-container>
+
+    <!-- states ------->
+    <ng-template #loading>
+      <div class="loader"></div>
+      <p>Fetching images…</p>
+    </ng-template>
+
+    <ng-template #error>
+      <p class="error">
+        404: Sorry ! could not get today's picture :(
+      </p>
+    </ng-template>
+
+  </div>
+  <p id="signature">Created by Kantima Østvold 2025</p>
+</div>
