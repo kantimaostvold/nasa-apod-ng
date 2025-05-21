@@ -1,10 +1,9 @@
 # NASA “Astronomy Picture of the Day” in Angular 19
 
-Developed to dip my toe into the waters of Angular :)
+Developed to dip my toe into the (deep) waters of Angular :) 
 
-🌐 Live WebSite: https://white-dune-0a3a32e03.6.azurestaticapps.net
+🌐 Live Azure WebSite: https://ambitious-ocean-0c90bbb03.6.azurestaticapps.net/
 
----
 
 ## What it is
 A very (very) simple Angular application that fetches NASA’s APOD API, shows the
@@ -15,5 +14,8 @@ image (or video) of the day, explains the astronomy behind it.
 * **Data :** NASA APOD REST API `https://api.nasa.gov/ 
 * **Build / Deploy :** Angular CLI → Azure Static Web Apps 
 
+## Whats next?
+* **Dark-mode /light-mode toggle:** For usability!
+* **Add a picture to favourites:** Implement a heart-button and functionalities to view all of your favourites.
 
----
+
