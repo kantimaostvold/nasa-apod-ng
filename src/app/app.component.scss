@@ -1,7 +1,7 @@
 
 h1 {
   color: #000000;
-  font-size: 15px;
+  font-size: 10px;
   font-family: 'Cutive Mono', monospace;
 }
 
@@ -53,7 +53,7 @@ h1 {
 
 #text_section,
 #picture_section {
-  flex: 1 1 200px;   
+  flex: 1 1 100px;   
 }
 
 #text_section h1 {
@@ -84,9 +84,3 @@ h1 {
   height: 100%;
 }
 
-@media (max-width: 800px) {
-  .container {
-    width: 95%;
-    max-width: none;   
-  }
-}
